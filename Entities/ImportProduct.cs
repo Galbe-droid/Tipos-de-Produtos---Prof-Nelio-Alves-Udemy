@@ -20,7 +20,7 @@ namespace ProductType.Entities
 
         public override string PriceTag()
         {
-            return base.PriceTag() + "\nFee: " + CustomFees;
+            return base.PriceTag() + "\nFee: " + CustomFees + "\nTotal: " + (Price + CustomFees);
         }
     }
 }
